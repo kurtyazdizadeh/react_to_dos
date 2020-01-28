@@ -1,7 +1,13 @@
 import React from 'react';
 
-function ListItem(props){
-  return <li>{props.title}</li>
+class ListItem extends React.Component {
+  constructor(props){
+    super(props);
+    this.props = props;
+  }
+  render(){
+    return <li>{this.props.title}</li>
+  }
 }
 
 export default ListItem;
